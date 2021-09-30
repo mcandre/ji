@@ -7,6 +7,10 @@
 * [ShellCheck](https://hackage.haskell.org/package/ShellCheck)
 * [vast](http://github.com/mcandre/vast)
 
+## Recommended
+
+* [Debian](https://www.debian.org/)
+
 # BUILD: LINT + TEST
 
 ```console
