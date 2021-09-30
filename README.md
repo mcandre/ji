@@ -44,6 +44,12 @@ The ji entrypoint is triggered by executing the command *`ji`*, without argument
 
 # PRECEPT 2: User Friendliness
 
+Generally safe commands, such as updating package caches, should not prompt for user confirmation.
+
+Potentially risky commands, such as upgrading software components, may prompt for user confirmation.
+
+Potentially hazardous commands, such as deleting user data or rebooting servers, should have an explicit prompt to confirm the operation.
+
 ji scripts should present simple binary user options, such as pressing `Enter` to continue; or pressing `Ctrl+C` to cancel the script.
 
 ji scripts should not prompt for console input values. ji scripts may prompt once for sudo authentication.
@@ -51,10 +57,6 @@ ji scripts should not prompt for console input values. ji scripts may prompt onc
 ji prompts should not require explicit console values to be typed out, such as "Yes", "No", "y", "n", etc.
 
 For example, configure low level commands to force acceptance by default without prompting. If needed, a simple `Enter` / `Ctrl+C` prompt can be introduce to replace the original prompt.
-
-Generally safe commands, such as updating package caches, should not prompt for user confirmation.
-
-Potentially harmful commands, such as deleting user data or rebooting servers, should have an explicit prompt to confirm the operation.
 
 ji scripts should terminate on the first error or `Ctrl+C` interrupt, not continue processing.
 
