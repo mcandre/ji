@@ -1,0 +1,10 @@
+#!/bin/sh
+set -euf
+unset IFS
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+ls /var/run/reboot-required
+printf "Reboot? (Enter: Confirm, Ctrl+C: Cancel) "
+read -r
+sudo reboot
