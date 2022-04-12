@@ -10,7 +10,7 @@ $ ji
 
 # EXAMPLE
 
-A Debian-based implementation in [bin/](bin).
+A UNIX-based implementation in [bin/](bin).
 
 # ABOUT
 

@@ -2,14 +2,49 @@
 set -euf
 unset IFS
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
-sudo apt-get autoremove --purge
+ji_macos() {
+    brew update
+    brew upgrade
+    sudo softwareupdate -ai
+}
 
-if [ -r /var/run/reboot-required ]; then
-    printf "Reboot? (Enter: Confirm, Ctrl+C: Cancel) "
-    read -r _
+ji_debian() {
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get dist-upgrade
+    sudo apt-get autoremove --purge
 
-    sudo reboot
-fi
+    if [ -r /var/run/reboot-required ]; then
+        printf "Reboot? (Enter: Confirm, Ctrl+C: Cancel) "
+        read -r _
+
+        sudo reboot
+    fi
+}
+
+ji_linux() {
+    LSB_RELEASE="$(lsb_release -i || echo 'unknown standard base')"
+
+    case "$LSB_RELEASE" in
+        *Debian)
+            ji_debian
+            ;;
+        *Ubuntu)
+            ji_debian
+            ;;
+        *)
+            echo 'unknown distribution'
+            ;;
+    esac
+}
+
+UNAME="$(uname -a)"
+
+case "$UNAME" in
+    Darwin*)
+        ji_macos
+        ;;
+    Linux*)
+        ji_linux
+        ;;
+esac
