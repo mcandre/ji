@@ -4,7 +4,6 @@
 * [ASDF](https://asdf-vm.com/) 0.10
 * [bashate](https://pypi.python.org/pypi/bashate/0.5.1)
 * [coreutils](https://www.gnu.org/software/coreutils/)
-* [direnv](https://direnv.net/) 2
 * [ShellCheck](https://hackage.haskell.org/package/ShellCheck)
 * [vast](http://github.com/mcandre/vast)
 
