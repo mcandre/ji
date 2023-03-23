@@ -3,6 +3,7 @@ export vast_tasks='
     v-build
     v-bashate
     v-funk
+    v-slick
     v-shellcheck
     v-shfmt
     v-yamllint
