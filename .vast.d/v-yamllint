@@ -1,6 +1,4 @@
 #!/bin/sh
 unset IFS
 set -euf
-
-ilint
-itest
+yamllint -s .yamllint .

@@ -1,4 +1,6 @@
 #!/bin/sh
 unset IFS
 set -euf
-isafety
+
+v-lint
+v-test

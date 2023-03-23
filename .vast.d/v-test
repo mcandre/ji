@@ -3,4 +3,6 @@ unset IFS
 set -euf
 
 DIR="${0%/*}"
-"${DIR}/../bin/ji"
+PATH="${DIR}/../bin:${PATH}"
+
+ji

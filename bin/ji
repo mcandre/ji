@@ -26,25 +26,25 @@ ji_linux() {
     LSB_RELEASE="$(lsb_release -i || echo 'unknown standard base')"
 
     case "$LSB_RELEASE" in
-        *Debian)
-            ji_debian
-            ;;
-        *Ubuntu)
-            ji_debian
-            ;;
-        *)
-            echo 'unknown distribution'
-            ;;
+    *Debian)
+        ji_debian
+        ;;
+    *Ubuntu)
+        ji_debian
+        ;;
+    *)
+        echo 'unknown distribution'
+        ;;
     esac
 }
 
 UNAME="$(uname -a)"
 
 case "$UNAME" in
-    Darwin*)
-        ji_macos
-        ;;
-    Linux*)
-        ji_linux
-        ;;
+Darwin*)
+    ji_macos
+    ;;
+Linux*)
+    ji_linux
+    ;;
 esac
