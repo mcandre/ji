@@ -5,6 +5,7 @@ unset IFS
 ji_macos() {
     brew update
     brew upgrade
+    brew autoremove
     brew cleanup
     sudo softwareupdate -ai
 }
