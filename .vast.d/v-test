@@ -1,8 +1,0 @@
-#!/bin/sh
-unset IFS
-set -euf
-
-DIR="${0%/*}"
-PATH="${DIR}/../bin:${PATH}"
-
-ji
