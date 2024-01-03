@@ -27,7 +27,7 @@ lint: \
 	yamllint
 
 bashate:
-	stank -exInterp 'zsh' . | \
+	stank -exInterp zsh . | \
 		grep -v .sample | \
 		xargs -n 1 bashate -i E006
 
