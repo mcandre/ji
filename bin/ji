@@ -11,6 +11,9 @@ ji_snap() {
 }
 
 ji_macos() {
+    osascript -e 'tell app "Finder" to empty' >/dev/null 2>&1 ||
+        echo 'trash empty'
+
     brew update
     brew upgrade
     brew autoremove
