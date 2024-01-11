@@ -19,6 +19,12 @@ ji_debian() {
     sudo apt-get upgrade
     sudo apt-get dist-upgrade
     sudo apt-get autoremove --purge
+    sudo apt-get autoclean
+    dpkg --list |
+        grep '^rc' |
+        awk '{ print $2 }' |
+        sudo xargs dpkg --purge >/dev/null 2>&1 ||
+        echo 'dpkg reporting clean'
 
     if [ -r /var/run/reboot-required ]; then
         printf "Reboot? (Enter: Confirm, Ctrl+C: Cancel) "
