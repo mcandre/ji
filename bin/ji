@@ -2,6 +2,10 @@
 set -euf
 unset IFS
 
+ji_snap() {
+    sudo snap refresh
+}
+
 ji_macos() {
     brew update
     brew upgrade
@@ -25,6 +29,10 @@ ji_debian() {
 }
 
 ji_linux() {
+    if command -v snap >/dev/null 2>&1; then
+        ji_snap
+    fi
+
     LSB_RELEASE="$(lsb_release -i || echo 'unknown standard base')"
 
     case "$LSB_RELEASE" in
