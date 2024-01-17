@@ -3,7 +3,7 @@ set -euf
 unset IFS
 
 ji_oh_my_zsh() {
-    zsh -ic 'omz update'
+    zsh -ic 'omz update --unattended'
 }
 
 ji_snap() {
