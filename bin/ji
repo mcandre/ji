@@ -53,6 +53,9 @@ ji_linux() {
     *Debian)
         ji_debian
         ;;
+    *Pop)
+        ji_debian
+        ;;
     *Ubuntu)
         ji_debian
         ;;
