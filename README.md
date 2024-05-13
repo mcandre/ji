@@ -80,6 +80,10 @@ FreeBSD
 
 (User-specified)
 
+## Recommended
+
+* Run `ji` commands within a persistent terminal session such as [screen](https://linux.die.net/man/1/screen), especially for update scripts that may be sensitive to network disconnects.
+
 # CONTRIBUTING
 
 For more information on developing ji itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
