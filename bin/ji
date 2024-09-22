@@ -21,6 +21,12 @@ ji_macos() {
     sudo softwareupdate -ai
 }
 
+ji_ubuntu() {
+    ji_debian
+
+    do-release-upgrade
+}
+
 ji_debian() {
     sudo apt-get update
     sudo apt-get upgrade
@@ -54,10 +60,10 @@ ji_linux() {
         ji_debian
         ;;
     *Pop)
-        ji_debian
+        ji_ubuntu
         ;;
     *Ubuntu)
-        ji_debian
+        ji_ubuntu
         ;;
     *)
         echo 'unknown distribution'
