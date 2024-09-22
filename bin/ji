@@ -21,9 +21,13 @@ ji_macos() {
     sudo softwareupdate -ai
 }
 
+ji_popos() {
+    ji_debian
+    pop-upgrade release upgrade
+}
+
 ji_ubuntu() {
     ji_debian
-
     do-release-upgrade
 }
 
@@ -60,7 +64,7 @@ ji_linux() {
         ji_debian
         ;;
     *Pop)
-        ji_ubuntu
+        ji_popos
         ;;
     *Ubuntu)
         ji_ubuntu
