@@ -1,5 +1,6 @@
 # BUILDTIME REQUIREMENTS
 
+* [GNU](https://www.gnu.org/)/[BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) [findutils](https://en.wikipedia.org/wiki/Find_(Unix))
 * POSIX compatible [make](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/make.html)
 * POSIX compatible [sh](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/sh.html)
 * [ShellCheck](https://www.shellcheck.net/) 0.10.0+
