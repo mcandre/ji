@@ -82,7 +82,7 @@ FreeBSD
 
 ## Recommended
 
-* Run `ji` commands within a persistent terminal session such as [screen](https://linux.die.net/man/1/screen), especially for update scripts that may be sensitive to network disconnects.
+* Run `ji` commands within a persistent terminal session such as [screen](https://en.wikipedia.org/wiki/GNU_Screen), especially for update scripts that may be sensitive to network disconnects.
 
 # CONTRIBUTING
 
