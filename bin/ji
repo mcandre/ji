@@ -3,7 +3,7 @@ set -euf
 unset IFS
 
 ji_oh_my_zsh() {
-    zsh -ic 'omz update --unattended'
+    zsh -ic "${HOME}/.oh-my-zsh/tools/upgrade.sh"
 }
 
 ji_snap() {
