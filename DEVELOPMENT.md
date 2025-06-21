@@ -5,7 +5,7 @@
 * [POSIX](https://pubs.opengroup.org/onlinepubs/9799919799/) compatible [sh](https://en.wikipedia.org/wiki/Unix_shell)
 * [ShellCheck](https://www.shellcheck.net/) 0.10.0+
 * [Go](https://go.dev/) 1.24.2+
-* [Python](https://www.python.org/) 3.12.1+
+* [Python](https://www.python.org/) 3.13.5+
 * [Rust](https://www.rust-lang.org/) 1.87.0+
 * [Snyk](https://snyk.io/)
 * Provision additional dev tools with `make -f install.mk [-j 4]`
