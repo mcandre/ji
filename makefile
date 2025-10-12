@@ -5,6 +5,7 @@
 	audit \
 	bashate \
 	funk \
+	govulncheck \
 	lint \
 	shellcheck \
 	shfmt \
@@ -15,7 +16,7 @@
 
 all: lint
 
-audit: snyk
+audit: govulncheck snyk
 
 lint: \
 	bashate \
@@ -31,6 +32,9 @@ bashate:
 
 funk:
 	funk .
+
+govulncheck:
+	govulncheck -scan package ./...
 
 shellcheck:
 	stank -print0 -exInterp zsh . | \
