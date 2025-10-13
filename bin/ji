@@ -1,6 +1,6 @@
-#!/bin/sh
-set -euf
+#!/bin/bash
 unset IFS
+set -eufo pipefail
 
 ji_oh_my_zsh() {
     zsh -ic "${HOME}/.oh-my-zsh/tools/upgrade.sh"
