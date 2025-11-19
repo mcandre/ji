@@ -28,7 +28,7 @@ ji_popos() {
 
 ji_ubuntu() {
     ji_debian
-    do-release-upgrade
+    do-release-upgrade -q
 }
 
 ji_debian() {
