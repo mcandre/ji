@@ -24,6 +24,15 @@ ji_macos() {
 ji_popos() {
     ji_debian
     pop-upgrade release upgrade
+
+    #
+    # Pending idempotence glitches
+    #
+    # Manually apply a Pop!_OS upgrade:
+    #
+    # sudo pop-upgrade release upgrade -f
+    # sudo reboot
+    #
 }
 
 ji_ubuntu() {
