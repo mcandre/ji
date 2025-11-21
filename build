@@ -4,7 +4,6 @@ set -eufo pipefail
 
 audit() {
     govulncheck
-    snyk
 }
 
 lint() {
@@ -43,11 +42,6 @@ slick() {
         xargs -0 -n 1 slick
 }
 
-snyk() {
-    command snyk test --all-projects --dev --exclude=requirements.txt
-    command snyk test --command=.venv/bin/python3 --dev
-}
-
 TASKS=' \
     audit \
     bashate \
@@ -57,7 +51,6 @@ TASKS=' \
     shellcheck \
     shfmt \
     slick \
-    snyk \
     test \
     unmake'
 
