@@ -84,9 +84,9 @@ ji_linux() {
     esac
 }
 
-if [ -r "${HOME}/.oh-my-zsh" ]; then
-    ji_oh_my_zsh
-fi
+# if [ -r "${HOME}/.oh-my-zsh" ]; then
+#     ji_oh_my_zsh
+# fi
 
 UNAME="$(uname -a)"
 
