@@ -2,6 +2,8 @@
 
 ![jiangshi](ji.png)
 
+[![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
+
 # USAGE
 
 ```console
@@ -71,10 +73,6 @@ ji logs should present minimal, relevant, actionable information. Log noise shou
 ji scripts should complete fairly quickly, with incrementing progress feedback during long delays.
 
 ji scripts should behave idempotently: The script should succeed regardless of whether it is the first time run, or the nth time run.
-
-# LICENSE
-
-FreeBSD
 
 # RUNTIME REQUIREMENTS
 
