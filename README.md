@@ -1,6 +1,6 @@
 # ji: DevOps Reanimated
 
-[![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
+[![Lint](https://github.com/mcandre/ji/actions/workflows/lint.yml/badge.svg)](https://github.com/mcandre/ji/actions/workflows/lint.yml) [![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
 
 ![jiangshi](ji.png)
 
