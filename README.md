@@ -1,8 +1,8 @@
 # ji: DevOps Reanimated
 
-![jiangshi](ji.png)
-
 [![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
+
+![jiangshi](ji.png)
 
 # USAGE
 
