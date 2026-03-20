@@ -51,8 +51,7 @@ TASKS=' \
     shellcheck \
     shfmt \
     slick \
-    test \
-    unmake'
+    test'
 
 SELECTED_TASKS='lint'
 
