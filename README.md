@@ -71,15 +71,13 @@ ji scripts should complete fairly quickly, with incrementing progress feedback d
 
 ji scripts should behave idempotently: The script should succeed regardless of whether it is the first time run, or the nth time run.
 
-# RUNTIME REQUIREMENTS
+# PREREQUISITES
 
 (User-specified)
 
 ## Recommended
 
 * Run `ji` commands within a persistent terminal session such as [screen](https://en.wikipedia.org/wiki/GNU_Screen), especially for update scripts that may be sensitive to network disconnects.
-
-# CONTRIBUTING
 
 For details on building from source, see [DEVELOPMENT](DEVELOPMENT.md).
 
