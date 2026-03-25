@@ -1,27 +1,34 @@
-# BUILDTIME REQUIREMENTS
+# DEVELOPMENT
+
+We follow standard, `make` based operations for performing build operations.
+
+# DEV ENVIRONMENT
+
+## Prerequisites
 
 * a UNIX-like environment (e.g. [WSL](https://learn.microsoft.com/en-us/windows/wsl/))
 * [bash](https://www.gnu.org/software/bash/) 4+
-* [GNU](https://www.gnu.org/)/[BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) [findutils](https://en.wikipedia.org/wiki/Find_(Unix))
 * [Go](https://go.dev/)
-* POSIX compliant [make](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/make.html)
-* [Python](https://www.python.org/)
+* [make](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/make.html)
 * [ShellCheck](https://www.shellcheck.net/) 0.11.0+
 * Provision additional dev tools with `make -f install.mk`
 
 ## Recommended
 
-* [ASDF](https://asdf-vm.com/) 0.18 (run `asdf reshim` after provisioning)
-* [direnv](https://direnv.net/) 2
+* [asdf](https://asdf-vm.com/)
 
-# AUDIT
+# TASKS
 
-```console
-$ ./build audit
+We automate engineering tasks.
+
+## Security Audit
+
+```sh
+make audit
 ```
 
-# LINT
+## Lint
 
-```console
-$ ./build [lint]
+```sh
+make
 ```

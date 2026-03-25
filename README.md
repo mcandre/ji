@@ -4,15 +4,12 @@
 
 ![jiangshi](ji.png)
 
-# USAGE
-
-```console
-$ ji
-```
-
 # EXAMPLE
 
-A UNIX-based implementation in [bin/](bin).
+```console
+% cd bin
+% ji
+```
 
 # ABOUT
 
@@ -84,7 +81,7 @@ ji scripts should behave idempotently: The script should succeed regardless of w
 
 # CONTRIBUTING
 
-For more information on developing ji itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
+For details on building from source, see [DEVELOPMENT](DEVELOPMENT.md).
 
 # CREDITS
 

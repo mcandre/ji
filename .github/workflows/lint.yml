@@ -12,13 +12,13 @@ jobs:
     - uses: "actions/setup-go@v5"
       with:
         go-version: "1.26.1"
-    - uses: "actions/setup-python@v5"
+    - uses: "dtolnay/rust-toolchain@stable"
       with:
-        python-version: "3.14"
-    - name: "provision dev tools"
-      run: "make -f install.mk"
-    - name: "install shellcheck"
+        toolchain: "1.92.0"
+    - name: "provision shell tools"
       run: |
         sudo apt update
-        sudo apt install -y shellcheck
-    - run: "./build"
+        sudo apt install -y shellcheck zsh
+    - name: "provision dev tools"
+      run: "make -f install.mk"
+    - run: "make"
