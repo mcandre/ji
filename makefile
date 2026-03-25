@@ -4,7 +4,6 @@
 	all \
 	audit \
 	govulncheck \
-	kirill \
 	lint \
 	shellcheck \
 	shfmt \
@@ -17,11 +16,7 @@ audit: govulncheck
 govulncheck:
 	govulncheck -scan package ./...
 
-kirill:
-	kirill .
-
 lint: \
-	kirill \
 	shellcheck \
 	shfmt \
 	slick
