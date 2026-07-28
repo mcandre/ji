@@ -2,6 +2,11 @@
 unset IFS
 set -eufo pipefail
 
+ji_zsh_defer() {
+    cd "$HOME/zsh-defer"
+    git pull
+}
+
 ji_snap() {
     sudo snap refresh
 }
@@ -79,6 +84,10 @@ ji_linux() {
         ;;
     esac
 }
+
+if [ -e "$HOME/zsh-defer" ]; then
+    ji_zsh_defer
+fi
 
 UNAME="$(uname -a)"
 
