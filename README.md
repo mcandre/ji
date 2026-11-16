@@ -1,6 +1,6 @@
 # ji: DevOps Reanimated
 
-[![CI/CD](https://badgen.net/github/checks/mcandre/ji?icon=github)](https://github.com/mcandre/ji/actions) [![License](https://badgen.net/static/license/BSD/ab2b29)](LICENSE.md)
+[![CI/CD](https://badgen.net/github/checks/mcandre/ji?icon=github)](https://github.com/mcandre/ji/actions) [![License](https://badgen.net/static/license/BSD/ab2b29?icon=freebsd)](LICENSE.md)
 
 ![jiangshi](ji.png)
 
