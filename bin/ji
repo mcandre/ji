@@ -8,6 +8,11 @@ ji_zsh_defer() {
 }
 
 ji_snap() {
+    if [ -n "${WSL_DISTRO_NAME:-}" ]; then
+        echo 'wsl detected. skipping snap refresh'
+        return
+    fi
+
     sudo snap refresh
 }
 
